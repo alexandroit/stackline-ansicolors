@@ -1,23 +1,120 @@
 {
-  "name": "ansicolors",
-  "version": "0.3.2",
-  "description": "Functions that surround a string with ansicolor codes so it prints in color.",
-  "main": "ansicolors.js",
+  "name": "@stackline/ansicolors",
+  "version": "1.0.0",
+  "description": "Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types",
+  "type": "commonjs",
+  "main": "./ansicolors.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./index.d.mts",
+        "require": "./index.d.cts",
+        "default": "./index.d.ts"
+      },
+      "browser": {
+        "import": "./dist/ansicolors.browser.mjs",
+        "require": "./dist/ansicolors.browser.cjs"
+      },
+      "import": "./index.mjs",
+      "require": "./ansicolors.js",
+      "default": "./ansicolors.js"
+    },
+    "./ansicolors": {
+      "types": {
+        "import": "./index.d.mts",
+        "require": "./index.d.cts",
+        "default": "./index.d.ts"
+      },
+      "import": "./index.mjs",
+      "require": "./ansicolors.js",
+      "default": "./ansicolors.js"
+    },
+    "./ansicolors.js": {
+      "types": {
+        "import": "./index.d.mts",
+        "require": "./index.d.cts",
+        "default": "./index.d.ts"
+      },
+      "import": "./index.mjs",
+      "require": "./ansicolors.js",
+      "default": "./ansicolors.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "unpkg": "./dist/ansicolors.global.js",
+  "jsdelivr": "./dist/ansicolors.global.js",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "ansicolors.js",
+    "ansicolors.d.ts",
+    "index.mjs",
+    "index.d.ts",
+    "index.d.cts",
+    "index.d.mts",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "SECURITY.md"
+  ],
   "scripts": {
-    "test": "node test/*.js"
+    "clean": "node scripts/clean.mjs",
+    "build": "node scripts/build.mjs",
+    "lint": "eslint ansicolors.js index.mjs scripts test",
+    "test:upstream": "node test/ansicolors.js",
+    "test:matrix": "node test/matrix.js && node test/object-contract.js",
+    "test:compatibility": "node test/compatibility.js",
+    "test:esm": "node test/esm.mjs",
+    "test:types": "node node_modules/typescript-3-9/bin/tsc -p test/types/tsconfig.legacy.json && node node_modules/typescript/bin/tsc -p test/types/tsconfig.commonjs.json && node node_modules/typescript/bin/tsc -p test/types/tsconfig.modern.json",
+    "test:browser": "node scripts/check-browser.mjs",
+    "test": "npm run test:upstream && npm run test:matrix && npm run test:compatibility && npm run test:esm && npm run test:types && npm run test:browser",
+    "test:coverage": "c8 --all --include=ansicolors.js --check-coverage --lines 100 --functions 100 --branches 100 node test/coverage.js",
+    "test:smoke": "node scripts/smoke-install.mjs && node scripts/smoke-cardinal.mjs",
+    "check:package": "publint && attw --pack .",
+    "pack:check": "npm pack --dry-run",
+    "verify": "npm run lint && npm run build && npm test && npm run test:coverage && npm run test:smoke && npm run check:package && npm run pack:check",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/ansicolors.git"
+    "url": "git+https://github.com/alexandroit/stackline-ansicolors.git"
+  },
+  "homepage": "https://alexandro.net/docs/vanilla/ansicolors/",
+  "bugs": {
+    "url": "https://github.com/alexandroit/stackline-ansicolors/issues"
   },
   "keywords": [
     "ansi",
     "colors",
-    "highlight",
-    "string"
+    "terminal",
+    "console",
+    "zero-dependency",
+    "typescript",
+    "stackline"
   ],
-  "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
+  "author": "Stackline Maintainers",
+  "contributors": [
+    "Thorsten Lorenz"
+  ],
   "license": "MIT",
-  "readmeFilename": "README.md",
-  "gitHead": "858847ca28e8b360d9b70eee0592700fa2ab087d"
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.18.5",
+    "@eslint/js": "10.0.1",
+    "ansicolors-baseline": "npm:ansicolors@0.3.2",
+    "c8": "12.0.0",
+    "esbuild": "0.28.2",
+    "eslint": "10.9.1",
+    "publint": "0.3.24",
+    "typescript": "7.0.2",
+    "typescript-3-9": "npm:typescript@3.9.10"
+  }
 }

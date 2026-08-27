@@ -1,0 +1,40 @@
+import colors from './ansicolors.js'
+
+export const {
+  white,
+  black,
+  blue,
+  cyan,
+  green,
+  magenta,
+  red,
+  yellow,
+  brightBlack,
+  brightRed,
+  brightGreen,
+  brightYellow,
+  brightBlue,
+  brightMagenta,
+  brightCyan,
+  brightWhite,
+  bgBlack,
+  bgRed,
+  bgGreen,
+  bgYellow,
+  bgBlue,
+  bgMagenta,
+  bgCyan,
+  bgWhite,
+  bgBrightBlack,
+  bgBrightRed,
+  bgBrightGreen,
+  bgBrightYellow,
+  bgBrightBlue,
+  bgBrightMagenta,
+  bgBrightCyan,
+  bgBrightWhite,
+  open,
+  close
+} = colors
+
+export default colors
