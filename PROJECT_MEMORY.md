@@ -5,9 +5,10 @@ upstream: https://github.com/thlorenz/ansicolors
 stackline_package: "@stackline/ansicolors"
 state: PUBLISHED
 decision: GO
-registry_scope: verdaccio-only
-public_npm: false
-public_github: false
+registry_scope: verdaccio-and-public-npm
+public_npm: true
+public_github: true
+docs_production: true
 created: 2026-08-26
 last_updated: 2026-08-26
 ---
@@ -84,9 +85,9 @@ No runtime CVE or GHSA was found. This project must not claim otherwise.
 ## Decision
 
 GO. Implementation, verification, packaging, and downstream validation are
-complete. `@stackline/ansicolors@1.0.0` is published only to the local
-Verdaccio registry. Public npm and public GitHub publication were not
-performed.
+complete. The Verdaccio rehearsal was published as `1.0.0`; the exact final
+artifact is public as `@stackline/ansicolors@1.0.1` on Verdaccio and npm.
+Source, CI, CodeQL, release assets, and production documentation are public.
 
 ## Final Verification
 
@@ -102,7 +103,7 @@ performed.
   consumer TypeScript compilation passed.
 - `publint` reported no findings and AreTheTypesWrong reported all root, deep,
   CJS, ESM, Node 10/16, and bundler entry points green.
-- Direct Verdaccio and legacy npm-alias installs passed.
+- Direct and legacy npm-alias installs from Verdaccio and official npm passed.
 - The complete `cardinal@2.1.1` suite passed 174 assertions and lint with both
   `@stackline/ansicolors` and `@stackline/redeyed` installed from Verdaccio
   through their historical dependency keys.
@@ -110,15 +111,20 @@ performed.
   remain zero.
 - 174 dependency signatures and 26 attestations were verified.
 
-## Verdaccio Artifact
+## Public Artifact
 
-- package: `@stackline/ansicolors@1.0.0`
+- package: `@stackline/ansicolors@1.0.1`
 - tag: `latest`
-- files: 15
-- packed size: 7.6 kB
-- unpacked size: 26.7 kB
-- SHA-1: `d48bbf1c265319da5b62d58d1b7575202cdda0e3`
-- integrity: `sha512-qbk8HSncjM7dqCy2JovYmCJaUdlUHLnMlGIgXzR0LrbP2yeICD/PoFKMTZ6m/82E02iR8zc9Q0OnOPqtXcWdJQ==`
+- files: 16
+- packed size: 8.1 kB
+- unpacked size: 28.3 kB
+- SHA-1: `54750ff0424c31b2a51e96511342a8f42c83645b`
+- integrity: `sha512-WkgOMQSXnz5wIJ86bLTPWQ1OJ0qOLxJZO/4P2jR7A/j7/QTDnZ7dS6cQ5M3yTbwCMPcM8JBx33D5RXYdboMqMg==`
+- source commit: `3538f6654955b2c9083a2ba70aaa965736ed1e9f`
+- release: https://github.com/alexandroit/stackline-ansicolors/releases/tag/v1.0.1
+- CI: https://github.com/alexandroit/stackline-ansicolors/actions/runs/33033264530
+- CodeQL: https://github.com/alexandroit/stackline-ansicolors/actions/runs/33033264443
+- documentation: https://alexandro.net/docs/vanilla/ansicolors/
 
 ## Chronological Log
 
@@ -134,5 +140,8 @@ performed.
   explicit exports, CI/security/release documentation, and comprehensive
   compatibility tests implemented without changing the CommonJS runtime.
 - 2026-08-26: all release gates and the full Cardinal consumer suite passed.
-- 2026-08-26: `@stackline/ansicolors@1.0.0` published to Verdaccio only;
-  official npm and public GitHub remained untouched.
+- 2026-08-26: `@stackline/ansicolors@1.0.0` published to Verdaccio as the
+  private registry rehearsal.
+- 2026-08-26: final `1.0.1` artifact published unchanged to Verdaccio and npm;
+  public direct/alias smoke, audit, CI, CodeQL, release assets, documentation,
+  robots, and aggregate sitemaps passed.

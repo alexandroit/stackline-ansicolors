@@ -3,13 +3,13 @@
 ## Current State
 
 - Upstream: `ansicolors@0.3.2`
-- Stackline target: `@stackline/ansicolors@1.0.0`
+- Stackline target: `@stackline/ansicolors@1.0.1`
 - Decision: GO
-- State: PUBLISHED
-- Registry scope: Verdaccio only (`http://127.0.0.1:4873`)
+- State: PUBLIC RELEASE COMPLETE
+- Registry scope: Verdaccio and official npm
 - Runtime dependencies: zero
-- Public npm publication: not authorized and not performed
-- Public GitHub publication: not performed
+- GitHub: https://github.com/alexandroit/stackline-ansicolors
+- Docs: https://alexandro.net/docs/vanilla/ansicolors/
 
 ## Delivered Delta
 
@@ -21,8 +21,8 @@ and direct plus npm-alias installation paths.
 ## Artifact Evidence
 
 - Dist tag: `latest`
-- SHA-1: `d48bbf1c265319da5b62d58d1b7575202cdda0e3`
-- Integrity: `sha512-qbk8HSncjM7dqCy2JovYmCJaUdlUHLnMlGIgXzR0LrbP2yeICD/PoFKMTZ6m/82E02iR8zc9Q0OnOPqtXcWdJQ==`
+- SHA-1: `54750ff0424c31b2a51e96511342a8f42c83645b`
+- Integrity: `sha512-WkgOMQSXnz5wIJ86bLTPWQ1OJ0qOLxJZO/4P2jR7A/j7/QTDnZ7dS6cQ5M3yTbwCMPcM8JBx33D5RXYdboMqMg==`
 - Runtime dependencies: zero
 - Core runtime delta from upstream: none
 - Direct scoped install: PASS
@@ -30,11 +30,12 @@ and direct plus npm-alias installation paths.
 - Cardinal 2.1.1 with both Stackline prerequisites: 174 assertions and lint
   PASS
 - Production audit: zero vulnerabilities
-- Public npm: untouched
-- Public GitHub: untouched
+- Official npm scoped and alias installs: PASS
+- CI and CodeQL: PASS
+- GitHub release: tarball, SHA512SUMS, and CycloneDX SBOM attached
 
 ## Next Project
 
-Project 07 (`cardinal`) is unblocked and remains the next CODEX_READY project.
+Project 07 (`cardinal`) is unblocked and remains the next fixed roadmap item.
 It should consume Projects 05 and 06 through npm aliases under the historical
 `redeyed` and `ansicolors` dependency keys.
