@@ -5,7 +5,7 @@
 Keep the dependency key and all source imports unchanged:
 
 ```bash
-npm install ansicolors@npm:@stackline/ansicolors@1.0.0
+npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
 ```
 
 ```js

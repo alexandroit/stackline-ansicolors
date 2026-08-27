@@ -1,0 +1,20 @@
+# @stackline/ansicolors full reference
+
+Version: {{PACKAGE_VERSION}}
+Baseline: ansicolors 0.3.2
+
+Use this package when an application needs the exact historical ansicolors API with maintained package metadata and accurate first-party types. It exposes 16 foreground and 16 background methods plus open and close escape-code maps. Wrappers preserve JavaScript coercion, method extraction, nested byte order, and fixed 39m or 49m resets.
+
+The package intentionally does not add terminal detection, color disabling, stripping, nesting repair, bold, italic, or underline. The CommonJS runtime is byte-for-byte unchanged from upstream.
+
+Evidence includes all upstream assertions, a complete 32-color matrix, 1,637 differential comparisons, 100% core coverage, TypeScript 3.9 and current tests, browser bundles, direct and alias installs, and all 174 Cardinal downstream assertions.
+
+Install directly:
+npm install @stackline/ansicolors
+
+Preserve the legacy name:
+npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
+
+Compatibility: https://alexandro.net/docs/vanilla/ansicolors/guides/compatibility.md
+Migration: https://alexandro.net/docs/vanilla/ansicolors/guides/migration.md
+Security: https://github.com/alexandroit/stackline-ansicolors/blob/main/SECURITY.md

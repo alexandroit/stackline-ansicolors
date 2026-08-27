@@ -1,6 +1,6 @@
 {
   "name": "@stackline/ansicolors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types",
   "type": "commonjs",
   "main": "./ansicolors.js",
@@ -54,6 +54,7 @@
     "index.d.ts",
     "index.d.cts",
     "index.d.mts",
+    "examples",
     "CHANGELOG.md",
     "LICENSE",
     "NOTICE",
@@ -63,7 +64,7 @@
   "scripts": {
     "clean": "node scripts/clean.mjs",
     "build": "node scripts/build.mjs",
-    "lint": "eslint ansicolors.js index.mjs scripts test",
+    "lint": "eslint ansicolors.js index.mjs scripts test docs-site",
     "test:upstream": "node test/ansicolors.js",
     "test:matrix": "node test/matrix.js && node test/object-contract.js",
     "test:compatibility": "node test/compatibility.js",
@@ -73,9 +74,14 @@
     "test": "npm run test:upstream && npm run test:matrix && npm run test:compatibility && npm run test:esm && npm run test:types && npm run test:browser",
     "test:coverage": "c8 --all --include=ansicolors.js --check-coverage --lines 100 --functions 100 --branches 100 node test/coverage.js",
     "test:smoke": "node scripts/smoke-install.mjs && node scripts/smoke-cardinal.mjs",
+    "test:docs": "npm run docs:build && node scripts/check-docs.mjs",
     "check:package": "publint && attw --pack .",
     "pack:check": "npm pack --dry-run",
-    "verify": "npm run lint && npm run build && npm test && npm run test:coverage && npm run test:smoke && npm run check:package && npm run pack:check",
+    "audit:dependencies": "npm audit --omit=dev --audit-level=low",
+    "audit:signatures": "npm audit signatures",
+    "docs:build": "npm run build && node scripts/build-docs.mjs",
+    "docs:serve": "node scripts/serve-docs.mjs",
+    "verify": "npm run clean && npm run lint && npm run build && npm test && npm run test:coverage && npm run test:smoke && npm run check:package && npm run pack:check && npm run test:docs && npm run audit:dependencies",
     "prepack": "npm run build"
   },
   "repository": {

@@ -2,7 +2,18 @@
 
 All notable changes to `@stackline/ansicolors` are documented here.
 
-## 1.0.0 - 2026-08-26
+## [Unreleased]
+
+## [1.0.1] - 2026-08-26
+
+### Added
+
+- Public ANSI palette preview backed by the production browser bundle.
+- Machine-readable documentation, crawler metadata, and a packaged example.
+- Pinned CI, CodeQL, and immutable npm publication workflows.
+- Documentation and production dependency audit release gates.
+
+## [1.0.0] - 2026-08-26
 
 ### Added
 
@@ -24,3 +35,7 @@ All notable changes to `@stackline/ansicolors` are documented here.
 
 - Production dependency audit surface remains empty.
 - No CVE or GHSA is attributed to the upstream runtime.
+
+[Unreleased]: https://github.com/alexandroit/stackline-ansicolors/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/alexandroit/stackline-ansicolors/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/alexandroit/stackline-ansicolors/tree/v1.0.0

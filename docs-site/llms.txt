@@ -1,0 +1,11 @@
+# @stackline/ansicolors {{PACKAGE_VERSION}}
+
+Zero-dependency ANSI foreground and background wrappers preserving the exact ansicolors 0.3.2 contract.
+
+Install: npm install @stackline/ansicolors
+Alias migration: npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
+Documentation: https://alexandro.net/docs/vanilla/ansicolors/
+Source: https://github.com/alexandroit/stackline-ansicolors
+License: MIT
+
+The package provides CommonJS, native ESM, accurate TypeScript 3.9+ declarations, browser bundles, 32 color methods, and open/close escape maps.

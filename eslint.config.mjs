@@ -2,7 +2,7 @@ import js from '@eslint/js'
 
 export default [
   {
-    ignores: ['coverage/**', 'dist/**', 'node_modules/**']
+    ignores: ['coverage/**', 'dist/**', 'node_modules/**', 'site-dist/**']
   },
   js.configs.recommended,
   {
@@ -20,6 +20,16 @@ export default [
     },
     rules: {
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
+    }
+  },
+  {
+    files: ['docs-site/**/*.js'],
+    languageOptions: {
+      globals: {
+        document: 'readonly',
+        globalThis: 'readonly',
+        navigator: 'readonly'
+      }
     }
   },
   {

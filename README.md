@@ -1,8 +1,18 @@
 # @stackline/ansicolors
 
-[![CI](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/ci.yml/badge.svg)](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/codeql.yml/badge.svg)](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/codeql.yml)
-[![license: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@stackline/ansicolors.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/ansicolors)
+[![npm downloads](https://img.shields.io/npm/dm/@stackline/ansicolors.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/ansicolors)
+[![CI](https://img.shields.io/github/actions/workflow/status/alexandroit/stackline-ansicolors/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/@stackline/ansicolors.svg?style=flat-square)](LICENSE)
+
+**[Docs and ANSI preview](https://alexandro.net/docs/vanilla/ansicolors/)** |
+**[npm](https://www.npmjs.com/package/@stackline/ansicolors)** |
+**[GitHub](https://github.com/alexandroit/stackline-ansicolors)** |
+**[Migration](MIGRATION.md)** |
+**[Security](SECURITY.md)** |
+**[Changelog](CHANGELOG.md)**
+
+**Current package version:** `1.0.1`
 
 Zero-dependency ANSI foreground and background color wrappers. This package is
 a compatibility-first, independently maintained fork of
