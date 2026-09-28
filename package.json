@@ -1,6 +1,6 @@
 {
   "name": "@stackline/ansicolors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types",
   "type": "commonjs",
   "main": "./ansicolors.js",
@@ -99,7 +99,9 @@
     "console",
     "zero-dependency",
     "typescript",
-    "stackline"
+    "stackline",
+    "ansi-colors",
+    "terminal-colors"
   ],
   "author": "Stackline Maintainers",
   "contributors": [

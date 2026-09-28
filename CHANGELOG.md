@@ -4,6 +4,13 @@ All notable changes to `@stackline/ansicolors` are documented here.
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-09-28
+
+- Organize package documentation, preserve API and migration examples, and add Stackline community links.
+- Improve package discovery keywords with precise domain terms and `stackline`.
+- Pin GitHub Actions release tooling and require an explicit missing-version response before publication.
+
+
 ## [1.0.1] - 2026-08-26
 
 ### Added
@@ -36,6 +43,6 @@ All notable changes to `@stackline/ansicolors` are documented here.
 - Production dependency audit surface remains empty.
 - No CVE or GHSA is attributed to the upstream runtime.
 
-[Unreleased]: https://github.com/alexandroit/stackline-ansicolors/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/alexandroit/stackline-ansicolors/compare/v1.0.2...HEAD
 [1.0.1]: https://github.com/alexandroit/stackline-ansicolors/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/alexandroit/stackline-ansicolors/tree/v1.0.0
