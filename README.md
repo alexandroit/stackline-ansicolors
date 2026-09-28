@@ -61,7 +61,7 @@ Existing projects can keep the package key and every `require('ansicolors')`
 call unchanged:
 
 ```bash
-npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
+npm install ansicolors@npm:@stackline/ansicolors@^1.0.2
 ```
 
 ## Usage

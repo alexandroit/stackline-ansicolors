@@ -13,7 +13,7 @@ Install directly:
 npm install @stackline/ansicolors
 
 Preserve the legacy name:
-npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
+npm install ansicolors@npm:@stackline/ansicolors@^1.0.2
 
 Compatibility: https://alexandro.net/docs/vanilla/ansicolors/guides/compatibility.md
 Migration: https://alexandro.net/docs/vanilla/ansicolors/guides/migration.md

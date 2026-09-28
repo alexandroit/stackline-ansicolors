@@ -3,7 +3,7 @@
 Zero-dependency ANSI foreground and background wrappers preserving the exact ansicolors 0.3.2 contract.
 
 Install: npm install @stackline/ansicolors
-Alias migration: npm install ansicolors@npm:@stackline/ansicolors@^1.0.0
+Alias migration: npm install ansicolors@npm:@stackline/ansicolors@^1.0.2
 Documentation: https://alexandro.net/docs/vanilla/ansicolors/
 Source: https://github.com/alexandroit/stackline-ansicolors
 License: MIT
