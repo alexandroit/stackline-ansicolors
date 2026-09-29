@@ -1,6 +1,6 @@
 {
   "name": "@stackline/ansicolors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types",
   "type": "commonjs",
   "main": "./ansicolors.js",
@@ -93,13 +93,16 @@
     "url": "https://github.com/alexandroit/stackline-ansicolors/issues"
   },
   "keywords": [
+    "stackline",
+    "npm-package",
+    "ansicolors",
+    "typescript",
+    "nodejs",
     "ansi",
     "colors",
     "terminal",
     "console",
     "zero-dependency",
-    "typescript",
-    "stackline",
     "ansi-colors",
     "terminal-colors"
   ],

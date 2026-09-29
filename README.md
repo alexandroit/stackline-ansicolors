@@ -1,17 +1,18 @@
 # @stackline/ansicolors
 
-> Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types
+> Zero-dependency ANSI color wrappers with exact ansicolors compatibility and first-party types.
 
 [![npm version](https://img.shields.io/npm/v/@stackline/ansicolors.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/ansicolors)
-[![license](https://img.shields.io/npm/l/@stackline/ansicolors.svg?style=flat-square)](https://github.com/alexandroit/stackline-ansicolors/blob/main/LICENSE)
-[![GitHub repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-ansicolors)
+[![license](https://img.shields.io/npm/l/@stackline/ansicolors.svg?style=flat-square)](https://github.com/alexandroit/stackline-ansicolors)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-ansicolors-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-ansicolors)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/ansicolors/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
-**[Documentation](https://alexandro.net/docs/vanilla/ansicolors/)** |
-**[npm](https://www.npmjs.com/package/@stackline/ansicolors)** |
-**[Issues](https://github.com/alexandroit/stackline-ansicolors/issues)** |
-**[Repository](https://github.com/alexandroit/stackline-ansicolors)**
+**[Documentation](https://alexandro.net/docs/vanilla/ansicolors/)** | **[npm](https://www.npmjs.com/package/@stackline/ansicolors)** | **[Issues](https://github.com/alexandroit/stackline-ansicolors/issues)** | **[Repository](https://github.com/alexandroit/stackline-ansicolors)**
 
-**Package version:** `1.0.2`
+**Current package version:** `1.0.3`
+
+---
 
 ## Why this package?
 
@@ -27,7 +28,7 @@ endorse this fork.
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/ansicolors@1.0.2` |
+| Package | `@stackline/ansicolors@1.0.3` |
 | Node.js runtime | `>=12` |
 | CommonJS / primary entry | `./ansicolors.js` |
 | ES module entry | `./index.mjs` |
@@ -189,15 +190,6 @@ alias installation, and the complete `cardinal@2.1.1` downstream suite.
 
 Run `npm run verify` and inspect the package contents before release. Publish a new version through the [GitHub Actions publishing workflow](https://github.com/alexandroit/stackline-ansicolors/actions/workflows/publish.yml), using the SHA-512 digest of the reviewed tarball. Verify the exact published version, tarball integrity, and npm provenance after the run.
 
-## Community and Support
-
-Report reproducible package issues in the [issue tracker](https://github.com/alexandroit/stackline-ansicolors/issues). Use the [security policy](https://github.com/alexandroit/stackline-ansicolors/blob/main/SECURITY.md) for vulnerability reports.
-
-- [Stackline / Alexandro.Net](https://alexandro.net/)
-- [GitHub](https://github.com/alexandroit)
-- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
-- [Reddit community: r/Stackline](https://www.reddit.com/r/Stackline/)
-
 ## License
 
 <a id="license-and-attribution"></a>
@@ -206,3 +198,24 @@ Report reproducible package issues in the [issue tracker](https://github.com/ale
 
 MIT. See [LICENSE](https://github.com/alexandroit/stackline-ansicolors/blob/main/LICENSE) and [NOTICE](https://github.com/alexandroit/stackline-ansicolors/blob/main/NOTICE). Original work copyright 2013
 Thorsten Lorenz.
+
+## Credits and original authors
+
+- Original project: [ansicolors](https://github.com/thlorenz/ansicolors).
+- Stackline Maintainers.
+- Thorsten Lorenz.
+- Copyright 2013 Thorsten Lorenz.
+- Original work copyright 2013 Thorsten Lorenz.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
