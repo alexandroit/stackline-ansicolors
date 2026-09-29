@@ -4,7 +4,7 @@
     {
       "name": "@stackline/ansicolors",
       "path": "README.md",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "baselineVersion": "1.0.2",
       "keywords": [
         "stackline",
@@ -23,8 +23,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/ansicolors/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/ansicolors/-/ansicolors-1.0.2.tgz",
       "baselineIntegrity": "sha512-oGQBFl+50XPWNjkkmTOmx5kTqWDQuSLT2sHaEZFZcWMvI9G2SQSktujag5awlbtxHHGHHNGXrbpt1NhIiadGEA==",
-      "expectedSha512": "7c07a3077812659b63ffa44347bbd1a5e18ee7bfde8b69107ff22523f1eda0157c9d9fa576db11ceb262c9b0b6b5d6edfd072740e6dcea7c37fb23166d1691e9",
-      "tag": "docs-stackline-ansicolors-v1.0.3"
+      "expectedSha512": "bcabe4da054a03248868bc5fb68f0bf131bb4a4f6604e7a3ca9d6c6b6c59ee385e1e2323a23611b983f57810127dc023fba89499856433a7c1277b031ec2a21c",
+      "tag": "docs-stackline-ansicolors-v1.0.4"
     }
   ]
 }
