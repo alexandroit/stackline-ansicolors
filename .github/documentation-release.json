@@ -1,0 +1,30 @@
+{
+  "repository": "alexandroit/stackline-ansicolors",
+  "packages": [
+    {
+      "name": "@stackline/ansicolors",
+      "path": "README.md",
+      "version": "1.0.3",
+      "baselineVersion": "1.0.2",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "ansicolors",
+        "typescript",
+        "nodejs",
+        "ansi",
+        "colors",
+        "terminal",
+        "console",
+        "zero-dependency",
+        "ansi-colors",
+        "terminal-colors"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/ansicolors/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/ansicolors/-/ansicolors-1.0.2.tgz",
+      "baselineIntegrity": "sha512-oGQBFl+50XPWNjkkmTOmx5kTqWDQuSLT2sHaEZFZcWMvI9G2SQSktujag5awlbtxHHGHHNGXrbpt1NhIiadGEA==",
+      "expectedSha512": "7c07a3077812659b63ffa44347bbd1a5e18ee7bfde8b69107ff22523f1eda0157c9d9fa576db11ceb262c9b0b6b5d6edfd072740e6dcea7c37fb23166d1691e9",
+      "tag": "docs-stackline-ansicolors-v1.0.3"
+    }
+  ]
+}
