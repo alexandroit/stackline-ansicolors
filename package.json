@@ -123,8 +123,8 @@
     "ansicolors-baseline": "npm:ansicolors@0.3.2",
     "c8": "12.0.0",
     "esbuild": "0.28.2",
-    "eslint": "10.9.1",
-    "publint": "0.3.24",
+    "eslint": "10.12.0",
+    "publint": "0.3.25",
     "typescript": "7.0.2",
     "typescript-3-9": "npm:typescript@3.9.10"
   }
