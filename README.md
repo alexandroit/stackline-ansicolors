@@ -10,7 +10,7 @@
 
 **[Documentation](https://alexandro.net/docs/vanilla/ansicolors/)** | **[npm](https://www.npmjs.com/package/@stackline/ansicolors)** | **[Issues](https://github.com/alexandroit/stackline-ansicolors/issues)** | **[Repository](https://github.com/alexandroit/stackline-ansicolors)**
 
-**Current package version:** `1.0.4`
+**Current package version:** `1.0.6`
 
 ---
 
@@ -28,7 +28,7 @@ endorse this fork.
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/ansicolors@1.0.5` |
+| Package | `@stackline/ansicolors@1.0.6` |
 | Node.js runtime | `>=12` |
 | CommonJS / primary entry | `./ansicolors.js` |
 | ES module entry | `./index.mjs` |
