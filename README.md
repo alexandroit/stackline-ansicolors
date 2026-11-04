@@ -28,7 +28,7 @@ endorse this fork.
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/ansicolors@1.0.4` |
+| Package | `@stackline/ansicolors@1.0.5` |
 | Node.js runtime | `>=12` |
 | CommonJS / primary entry | `./ansicolors.js` |
 | ES module entry | `./index.mjs` |
